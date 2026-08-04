@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const host = headerStore.get("x-forwarded-host") ?? headerStore.get("host");
   const protocol = headerStore.get("x-forwarded-proto") ?? "https";
   const origin = host ? `${protocol}://${host}` : "http://localhost:3000";
-  const title = "Aegis Mesh — Multi-Cloud Incident Intelligence";
+  const title = "Aegis Mesh - Multi-Cloud Incident Intelligence";
   const description =
     "Understand, replay, and resolve incidents across every Kubernetes cluster and cloud.";
 

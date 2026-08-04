@@ -329,7 +329,7 @@ export default function Home() {
                     <button aria-label="Close service details" onClick={() => setSelectedNode("")}><X size={14} /></button>
                     <p>{nodeDetails[selectedNode]?.title ?? "Select a service"}</p>
                     <span>{nodeDetails[selectedNode]?.description ?? "Inspect live service health and dependencies."}</span>
-                    <div><strong>{nodeDetails[selectedNode]?.metric ?? "—"}</strong><small>{nodeDetails[selectedNode]?.detail ?? "Metric"}</small></div>
+                    <div><strong>{nodeDetails[selectedNode]?.metric ?? "-"}</strong><small>{nodeDetails[selectedNode]?.detail ?? "Metric"}</small></div>
                   </aside>
                 </div>
                 <div className="topology-footer">
